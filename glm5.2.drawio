@@ -13,13 +13,13 @@
         <mxCell id="K-QmJGskG7SiWTm3yIHl-3" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontColor=#30343B;align=left;verticalAlign=middle;rounded=1;fillColor=#F7F8FA;strokeColor=#AEB5BD;strokeWidth=2.0;align=left;verticalAlign=top;spacingTop=12;spacingLeft=12;fontStyle=1;" value="主模型（Target Model）" vertex="1">
           <mxGeometry height="630" width="2090" x="60" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="K-QmJGskG7SiWTm3yIHl-4" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#FFFFFF;strokeColor=#5B6168;strokeWidth=2.0;" value="Input IDs&lt;div&gt;&amp;lt;br&amp;gt;[B, S]&lt;/div&gt;" vertex="1">
+        <mxCell id="K-QmJGskG7SiWTm3yIHl-4" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#FFFFFF;strokeColor=#5B6168;strokeWidth=2.0;" value="Input IDs&lt;div&gt;[B, S]&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="150" x="105" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="K-QmJGskG7SiWTm3yIHl-5" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#E7DFF8;strokeColor=#9C83DE;strokeWidth=2.0;" value="Token Embedding&amp;lt;br&amp;gt;&lt;div&gt;V=154,880 → H=6,144&lt;/div&gt;" vertex="1">
+        <mxCell id="K-QmJGskG7SiWTm3yIHl-5" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=18;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#E7DFF8;strokeColor=#9C83DE;strokeWidth=2.0;" value="Token Embedding&lt;div&gt;V=154,880 → H=6,144&lt;/div&gt;" vertex="1">
           <mxGeometry height="110" width="230" x="330" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="K-QmJGskG7SiWTm3yIHl-6" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#E3F1FA;strokeColor=#68AEDD;strokeWidth=2.0;fontStyle=1;" value="Decoder Layers × 78&amp;lt;br&amp;gt;&lt;div&gt;Layer 0–2: Dense MLP&amp;lt;br&amp;gt;&lt;/div&gt;&lt;div&gt;Layer 3–77: MoE&lt;/div&gt;" vertex="1">
+        <mxCell id="K-QmJGskG7SiWTm3yIHl-6" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#E3F1FA;strokeColor=#68AEDD;strokeWidth=2.0;fontStyle=1;" value="Decoder Layers × 78&lt;div&gt;Layer 0–2: Dense MLP&lt;/div&gt;&lt;div&gt;Layer 3–77: MoE&lt;/div&gt;" vertex="1">
           <mxGeometry height="170" width="342.5" x="690" y="230" as="geometry" />
         </mxCell>
         <mxCell id="K-QmJGskG7SiWTm3yIHl-7" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=19;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#71C7C7;strokeColor=#5B6168;strokeWidth=2.0;" value="Final RMSNorm" vertex="1">
@@ -28,7 +28,7 @@
         <mxCell id="K-QmJGskG7SiWTm3yIHl-8" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=19;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#78C58A;strokeColor=#5B6168;strokeWidth=2.0;" value="LM Head&amp;lt;br&amp;gt;H → V" vertex="1">
           <mxGeometry height="90" width="200" x="1420" y="270" as="geometry" />
         </mxCell>
-        <mxCell id="K-QmJGskG7SiWTm3yIHl-9" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=19;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#FFFFFF;strokeColor=#5B6168;strokeWidth=2.0;" value="Logits + Sampling&amp;lt;br&amp;gt;Next Token" vertex="1">
+        <mxCell id="K-QmJGskG7SiWTm3yIHl-9" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=19;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#FFFFFF;strokeColor=#5B6168;strokeWidth=2.0;" value="Logits + Sampling&lt;div&gt;Next Token&lt;/div&gt;" vertex="1">
           <mxGeometry height="110" width="200" x="1760" y="260" as="geometry" />
         </mxCell>
         <mxCell id="K-QmJGskG7SiWTm3yIHl-10" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=16;fontColor=#E62E43;align=center;verticalAlign=middle;text;strokeColor=none;fillColor=none;spacing=0;fontStyle=2;" value="[T, 6144]" vertex="1">
@@ -40,28 +40,28 @@
         <mxCell id="K-QmJGskG7SiWTm3yIHl-12" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=20;fontColor=#30343B;align=left;verticalAlign=middle;rounded=1;fillColor=#FFFFFF;strokeColor=#68AEDD;strokeWidth=2.0;align=left;verticalAlign=top;spacingTop=12;spacingLeft=12;fontStyle=1;" value="单个 Decoder Layer ℓ（简化展开）" vertex="1">
           <mxGeometry height="245" width="1650" x="300" y="430" as="geometry" />
         </mxCell>
-        <mxCell id="K-QmJGskG7SiWTm3yIHl-13" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=16;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#FFFFFF;strokeColor=#5B6168;strokeWidth=2.0;fontStyle=1;" value="hℓ&amp;lt;br&amp;gt;[T, 6144]" vertex="1">
+        <mxCell id="K-QmJGskG7SiWTm3yIHl-13" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=16;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#FFFFFF;strokeColor=#5B6168;strokeWidth=2.0;fontStyle=1;" value="hℓ&lt;div&gt;[T, 6144]&lt;/div&gt;" vertex="1">
           <mxGeometry height="65" width="110" x="340" y="510" as="geometry" />
         </mxCell>
         <mxCell id="K-QmJGskG7SiWTm3yIHl-14" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=17;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#71C7C7;strokeColor=#5B6168;strokeWidth=2.0;" value="RMSNorm" vertex="1">
           <mxGeometry height="65" width="120" x="495" y="510" as="geometry" />
         </mxCell>
-        <mxCell id="K-QmJGskG7SiWTm3yIHl-15" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=15;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#E3F1FA;strokeColor=#68AEDD;strokeWidth=2.0;fontStyle=1;" value="DSA / MLA&amp;lt;br&amp;gt;Full: compute Top-k&amp;lt;br&amp;gt;Shared: reuse Top-k" vertex="1">
+        <mxCell id="K-QmJGskG7SiWTm3yIHl-15" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=15;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#E3F1FA;strokeColor=#68AEDD;strokeWidth=2.0;fontStyle=1;" value="DSA / MLA&lt;div&gt;Full: compute Top-k&lt;/div&gt;&lt;div&gt;Shared: reuse Top-k&lt;/div&gt;" vertex="1">
           <mxGeometry height="105" width="235" x="655" y="490" as="geometry" />
         </mxCell>
-        <mxCell id="K-QmJGskG7SiWTm3yIHl-16" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=15;fontColor=#30343B;align=center;verticalAlign=middle;ellipse;fontStyle=1;" value="+&amp;lt;br&amp;gt;Residual" vertex="1">
+        <mxCell id="K-QmJGskG7SiWTm3yIHl-16" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=15;fontColor=#30343B;align=center;verticalAlign=middle;ellipse;fontStyle=1;" value="+&lt;div&gt;Residual&lt;/div&gt;" vertex="1">
           <mxGeometry height="65" width="95" x="980" y="510" as="geometry" />
         </mxCell>
         <mxCell id="K-QmJGskG7SiWTm3yIHl-17" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=17;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#71C7C7;strokeColor=#5B6168;strokeWidth=2.0;" value="RMSNorm" vertex="1">
           <mxGeometry height="65" width="120" x="1153" y="510" as="geometry" />
         </mxCell>
-        <mxCell id="K-QmJGskG7SiWTm3yIHl-18" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=15;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#FBE3E1;strokeColor=#E98682;strokeWidth=2.0;fontStyle=1;" value="Dense SwiGLU  (ℓ &amp;lt; 3)&amp;lt;br&amp;gt;或 MoE Top-8 + Shared  (ℓ ≥ 3)" vertex="1">
+        <mxCell id="K-QmJGskG7SiWTm3yIHl-18" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=15;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#FBE3E1;strokeColor=#E98682;strokeWidth=2.0;fontStyle=1;" value="Dense SwiGLU  (ℓ &amp;lt; 3)或&amp;nbsp;&lt;div&gt;MoE Top-8 + Shared  (ℓ ≥ 3)&lt;/div&gt;" vertex="1">
           <mxGeometry height="95" width="230" x="1290" y="495" as="geometry" />
         </mxCell>
         <mxCell id="K-QmJGskG7SiWTm3yIHl-19" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=15;fontColor=#30343B;align=center;verticalAlign=middle;ellipse;fontStyle=1;" value="+&amp;lt;br&amp;gt;Residual" vertex="1">
           <mxGeometry height="85" width="95" x="1580" y="500" as="geometry" />
         </mxCell>
-        <mxCell id="K-QmJGskG7SiWTm3yIHl-20" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=16;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#FFFFFF;strokeColor=#5B6168;strokeWidth=2.0;fontStyle=1;" value="hℓ+1&amp;lt;br&amp;gt;[T, 6144]" vertex="1">
+        <mxCell id="K-QmJGskG7SiWTm3yIHl-20" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=16;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#FFFFFF;strokeColor=#5B6168;strokeWidth=2.0;fontStyle=1;" value="hℓ+1&lt;div&gt;[T, 6144]&lt;/div&gt;" vertex="1">
           <mxGeometry height="65" width="130" x="1740" y="510" as="geometry" />
         </mxCell>
         <mxCell id="K-QmJGskG7SiWTm3yIHl-22" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=17;fontColor=#30343B;align=center;verticalAlign=middle;rounded=1;fillColor=#FAF0CC;strokeColor=#E7BF5A;strokeWidth=2.0;" value="IndexShare 层型：0:F · 1:F · 2:F · 3:S · 4:S · 5:S · 6:F · 7:S · 8:S · 9:S · …" vertex="1">
